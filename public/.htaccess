@@ -1,6 +1,11 @@
 ErrorDocument 404 /error/404.html
 
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.img\-src\.co$ [OR]
+RewriteCond %{HTTP_HOST} ^img\-src\.pagodabox\.com$
+RewriteRule ^(.*)$ http://img-src.co/$1 [R=301,L]
+
 RewriteBase /
 RewriteRule ^(\d+)/?$ /i/index.php?w=$1&h=$1
 RewriteRule ^(\d+)x(\d+)/?$ /i/index.php?w=$1&h=$2
