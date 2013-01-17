@@ -37,6 +37,9 @@
 		h1#header .yellow {
 			color: #e6db74;
 		}
+		h1#header a {
+			color: #ddd;
+		}
 	h2 {
 		font-size: 25px;
 	}
@@ -79,6 +82,14 @@
 	.strikeout {
 		text-decoration: line-through;
 	}
+	#footer {
+		border-top: 1px solid #444;
+		padding-top: 20px;
+		margin-top: 75px;
+	}
+		#footer p {
+			text-align: right;
+		}
 
 /* #Page Styles
 ================================================== */
